@@ -972,4 +972,8 @@ span {
   .card {
     margin: 10px;
   }
+
+  .design {
+    font-size: 13px;
+  }
 }
