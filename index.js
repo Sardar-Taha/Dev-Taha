@@ -31,13 +31,28 @@ $cell.find(".js-collapser").click(function () {
   $cell.not($thisCell).removeClass("is-inactive");
 });
 
-var prevScrollpos = window.pageYOffset;
+// var prevScrollpos = window.pageYOffset;
+// window.onscroll = function () {
+//   var currentScrollPos = window.pageYOffset;
+//   if (prevScrollpos > currentScrollPos) {
+//     document.getElementById("navbar").style.top = "0";
+//   } else {
+//     document.getElementById("navbar").style.top = "-90px";
+//   }
+//   prevScrollpos = currentScrollPos;
+// };
+
+// Enable hidden nav bar
+
+const navbar = document.querySelector("#navbar");
+let prevScrollpos = window.pageYOffset;
+
 window.onscroll = function () {
-  var currentScrollPos = window.pageYOffset;
+  let currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
+    navbar.style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "-90px";
+    navbar.style.top = "-90px";
   }
   prevScrollpos = currentScrollPos;
 };

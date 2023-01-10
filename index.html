@@ -68,17 +68,17 @@
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <ol class="flex">
                 <span>01.</span>
-                About
+                <a href="#about"> About</a>
               </ol>
               <ol class="flex">
                 <span>02.</span>
-                Works
+                <a href="#work"> Works</a>
               </ol>
               <ol class="flex">
                 <span>03.</span>
-                Contact
+                <a href="#contact"> Contact</a>
               </ol>
-              <button class="resume">Resume</button>
+              <a href="#contct"> <button class="resume">Contact Me!</button></a>
             </ul>
           </div>
         </div>
@@ -95,11 +95,13 @@
         digital experiences. I design and code beautifully simple things, and I
         love what I do. I'm perpetually working on improving my chops.
       </p>
-      <button class="contact">Contact Me!</button>
+      <a href="#contct"> <button class="contact">Contact Me!</button></a>
     </div>
 
     <div class="container">
-      <h5 class="about-heading"><span class="number">01.</span>About</h5>
+      <h5 class="about-heading" id="about">
+        <span class="number">01.</span>About
+      </h5>
       <div class="about-sec">
         <div class="left">
           <div class="about-text">
@@ -140,7 +142,9 @@
 
     <div class="container">
       <div class="cards-heading">
-        <p class="work"><span class="two">02.</span>Some Things I’ve Built</p>
+        <p class="work" id="work">
+          <span class="two">02.</span>Some Things I’ve Built
+        </p>
       </div>
       <div class="wrapper">
         <div class="cards">
@@ -421,9 +425,9 @@
 
     <div class="container">
       <p class="getintouch-title">
-        <span class="three">03.&nbsp;</span>What's Next?
+        <span class="three" id="contct">03.&nbsp;</span>What's Next?
       </p>
-      <h5 class="getintouch">Get In Touch</h5>
+      <h5 class="getintouch" id="contact">Get In Touch</h5>
       <p class="getintouch-p">
         Whether you are curious about design, features or anything - I'm always
         ready to answer any type of question. Get in touch with me, I’ll try my
@@ -464,6 +468,7 @@
       </p>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="/index.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script language="javascript" src="/index.js">
