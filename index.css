@@ -848,6 +848,12 @@ span {
   }
 }
 
+@media only screen and (max-width: 733px) {
+  .cards {
+    padding: 5px;
+  }
+}
+
 @media only screen and (max-width: 774px) {
   .description-text {
     flex: 4;
@@ -955,5 +961,15 @@ span {
 
   .getintouch {
     font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .cards {
+    padding: 0px;
+  }
+
+  .card {
+    margin: 10px;
   }
 }
