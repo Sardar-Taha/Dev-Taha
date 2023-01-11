@@ -56,3 +56,16 @@ window.onscroll = function () {
   }
   prevScrollpos = currentScrollPos;
 };
+
+let buttons = document.getElementsByClassName("myButton");
+for (let button of buttons) {
+  button.addEventListener("click", function () {
+    window.location.href = "mailto:tahaabb1122@gmail.com";
+  });
+}
+
+document.querySelectorAll(".myButton").forEach((button) => {
+  button.addEventListener("click", function () {
+    window.location.href = "tahaabb1122@gmail.com";
+  });
+});

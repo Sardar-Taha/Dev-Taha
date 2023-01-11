@@ -34,13 +34,18 @@
     <link rel="stylesheet" href="index.css" />
     <title>Dev Sardar Taha</title>
   </head>
-  <body>
-    <nav class="navbar bg-light navbar-expand-lg hello fixed-top" id="navbar">
+  <body id="name">
+    <nav
+      class="navbar bg-light navbar-expand-lg hello fixed-top"
+      id="navbar"
+      id=""
+    >
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#name">
           <img class="img-fluid" src="/img/logo.png " alt=""
         /></a>
         <button
+          id="navbar-toggle"
           class="navbar-toggler"
           type="button"
           data-bs-toggle="offcanvas"
@@ -64,6 +69,7 @@
               aria-label="Close"
             ></button>
           </div>
+
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <ol class="flex">
@@ -78,7 +84,9 @@
                 <span>03.</span>
                 <a href="#contact"> Contact</a>
               </ol>
-              <a href="#contct"> <button class="resume">Contact Me!</button></a>
+              <a href="">
+                <button class="resume myButton">Contact Me!</button></a
+              >
             </ul>
           </div>
         </div>
@@ -95,7 +103,7 @@
         digital experiences. I design and code beautifully simple things, and I
         love what I do. I'm perpetually working on improving my chops.
       </p>
-      <a href="#contct"> <button class="contact">Contact Me!</button></a>
+      <a href=""> <button class="contact myButton">Contact Me!</button></a>
     </div>
 
     <div class="container">
@@ -308,6 +316,33 @@
               <i class="fa fa-close [ js-collapser ]"></i>
               <div class="card-content">
                 <h1 class="projectName">
+                  <span class="nameSpan">Project Name:</span>&nbsp;Plant Store
+                </h1>
+                <div class="description-div">
+                  <h1 class="projectDescription">Project Description:</h1>
+                  <p class="description-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quis, hic illum ducimus
+                  </p>
+                </div>
+                <div class="buttonDiv">
+                  <a class="link" href="gartercenter.vercel.app" target="_blank"
+                    ><button class="viewProject">View Project!</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card [ is-collapsed ]">
+            <div class="card__inner [ js-expander ]">
+              <span class="lowerCase">View Project</span>
+              <i class="fa fa-folder-o"></i>
+            </div>
+            <div class="card__expander">
+              <i class="fa fa-close [ js-collapser ]"></i>
+              <div class="card-content">
+                <h1 class="projectName">
                   <span class="nameSpan">Project Name:</span>&nbsp;Uber Eats
                 </h1>
                 <div class="description-div">
@@ -338,7 +373,7 @@
               <i class="fa fa-close [ js-collapser ]"></i>
               <div class="card-content">
                 <h1 class="projectName">
-                  <span class="nameSpan">Project Name:</span>&nbsp;Google Meets
+                  <span class="nameSpan">Project Name:</span>&nbsp; Google Meets
                 </h1>
                 <div class="description-div">
                   <h1 class="projectDescription">Project Description:</h1>
@@ -350,7 +385,7 @@
                 <div class="buttonDiv">
                   <a
                     class="link"
-                    href="https://google-meets.vercel.app/"
+                    href="https://google-meet-seven.vercel.app/"
                     target="_blank"
                     ><button class="viewProject">View Project!</button></a
                   >
@@ -368,7 +403,7 @@
               <i class="fa fa-close [ js-collapser ]"></i>
               <div class="card-content">
                 <h1 class="projectName">
-                  <span class="nameSpan">Project Name:</span>&nbsp; Facebook
+                  <span class="nameSpan">Project Name:</span> Facebook
                 </h1>
                 <div class="description-div">
                   <h1 class="projectDescription">Project Description:</h1>
@@ -381,36 +416,6 @@
                   <a
                     class="link"
                     href="https://facebook-form-rho.vercel.app/"
-                    target="_blank"
-                    ><button class="viewProject">View Project!</button></a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card [ is-collapsed ]">
-            <div class="card__inner [ js-expander ]">
-              <span class="lowerCase">View Project</span>
-              <i class="fa fa-folder-o"></i>
-            </div>
-            <div class="card__expander">
-              <i class="fa fa-close [ js-collapser ]"></i>
-              <div class="card-content">
-                <h1 class="projectName">
-                  <span class="nameSpan">Project Name:</span> Mx 100
-                </h1>
-                <div class="description-div">
-                  <h1 class="projectDescription">Project Description:</h1>
-                  <p class="description-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quis, hic illum ducimus
-                  </p>
-                </div>
-                <div class="buttonDiv">
-                  <a
-                    class="link"
-                    href="https://mx-100.vercel.app/"
                     target="_blank"
                     ><button class="viewProject">View Project!</button></a
                   >
@@ -433,7 +438,9 @@
         ready to answer any type of question. Get in touch with me, I’ll try my
         best to get back to you!
       </p>
-      <button class="sayhello buttonWrapper">Say Hello!</button>
+      <a href="">
+        <button class="sayhello buttonWrapper myButton">Say Hello!</button></a
+      >
     </div>
 
     <!-- Footer -->
@@ -464,7 +471,10 @@
       </div>
 
       <p class="design">
-        Designed & Build with <i class="fa fa-heart"></i>&nbsp; by Sardar Taha
+        <a href="#name">
+          Designed & Build with <i class="fa fa-heart"></i>&nbsp; by Sardar
+          Taha</a
+        >
       </p>
     </div>
 

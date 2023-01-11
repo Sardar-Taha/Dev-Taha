@@ -17,7 +17,7 @@ body {
 /* Webkit browsers */
 ::-webkit-scrollbar {
   width: 15px; /* width of the entire scrollbar */
-  background-color: #ffffff; /* background color of the scrollbar */
+  background-color: #fff; /* background color of the scrollbar */
 }
 
 /* Webkit browsers - Track (the scrolling part) */
@@ -138,6 +138,10 @@ span {
 .resume:active:before {
   -webkit-animation-name: resume;
   animation-name: resume;
+}
+
+.resume:active {
+  transform: scale(1.04);
 }
 
 .img-fluid {
@@ -280,6 +284,10 @@ span {
 .contact:active:before {
   -webkit-animation-name: contact;
   animation-name: contact;
+}
+
+.contact:active {
+  transform: scale(1.04);
 }
 
 .about-sec {
@@ -427,6 +435,10 @@ span {
 .sayhello:active:before {
   -webkit-animation-name: sayhello;
   animation-name: sayhello;
+}
+
+.sayhello:active {
+  transform: scale(1.04);
 }
 
 .buttonWrapper {
@@ -1003,5 +1015,13 @@ span {
 
   .design {
     font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  .contact {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
