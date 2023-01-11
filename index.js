@@ -69,3 +69,16 @@ document.querySelectorAll(".myButton").forEach((button) => {
     window.location.href = "tahaabb1122@gmail.com";
   });
 });
+
+// let elementsToAnimate = document.querySelectorAll(".li");
+
+// window.addEventListener("scroll", function () {
+//   for (let element of elementsToAnimate) {
+//     let rect = element.getBoundingClientRect();
+//     if (rect.top < window.innerHeight && rect.bottom > 0) {
+//       element.classList.add("animated");
+//     } else {
+//       element.classList.remove("animated");
+//     }
+//   }
+// });
