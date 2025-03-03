@@ -24,24 +24,35 @@ export const ContacUsWrapper = styled.div`
   }
 `;
 
-export const ContacUsIconDiv = styled.div`
+export const ContacUsIconDiv = styled.div``;
+
+export const ContacUsIcon = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  .icon {
-    margin-right: 20px;
+  gap: 1rem;
+  color: white;
+  margin-bottom: 1rem;
+
+  .icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px !important;
+    height: 48px !important;
     border: 2px solid #66fcf1;
-    padding: 10px;
-    border-radius: 50%;
+    border-radius: 100%;
     cursor: pointer;
 
     &:hover {
       color: #66fcf1;
     }
-  }
-`;
 
-export const ContacUsIcon = styled.p`
-  font-size: 50px;
-  color: #fff;
+    .icon {
+      font-size: 28px;
+    }
+  }
 `;
 
 export const ContactUsHeading = styled.h1`

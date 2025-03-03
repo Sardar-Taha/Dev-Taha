@@ -75,7 +75,7 @@ const ContactModal = ({
                         fontFamily: "teko",
                       }}
                     >
-                      dev.sardarabdul@gmail.com
+                      dev.sardartaha@gmail.com
                     </a>
                   </WorkModalHeading>
                   <WorkModalIcon>
@@ -84,16 +84,13 @@ const ContactModal = ({
                         <BsDiscord className="icon" />
                       </ContacUsIconDiv>
                     </a>
-                    <a href="https://twitter.com/dev_abd_" target="_blank">
+                    <a href="https://x.com/its_Sardar_Taha" target="_blank">
                       <ContacUsIconDiv>
                         <FiTwitter className="icon" />
                       </ContacUsIconDiv>
                     </a>
 
-                    <a
-                      href="https://www.linkedin.com/in/abdullah-abbasi-296b1a277/"
-                      target="_blank"
-                    >
+                    <a href="https://linkedin.com/in/dev-taha" target="_blank">
                       <ContacUsIconDiv>
                         <FaLinkedinIn className="icon" />
                       </ContacUsIconDiv>

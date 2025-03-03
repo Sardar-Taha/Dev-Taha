@@ -81,7 +81,7 @@ const AboutMe = () => {
           </MainRow>
           <a
             href={resume}
-            download="abdResume"
+            download="tahaResume"
             target="_blank"
             style={{ textDecoration: "none" }}
           >

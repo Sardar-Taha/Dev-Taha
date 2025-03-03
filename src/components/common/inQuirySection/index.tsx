@@ -16,7 +16,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { useState } from "react";
 
 const ContacUs = () => {
-  const [phoneNumber, setPhoneNumber] = useState("+923328730281");
+  const [phoneNumber, setPhoneNumber] = useState("+923405015414");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [showBtn, setShowBtn] = useState(true);
 
@@ -41,23 +41,28 @@ const ContacUs = () => {
       <MainContainer className="contact-container" s>
         <ContacUsIconDiv>
           <ContacUsIcon>
-            <AiOutlineWhatsApp
-              className="icon"
-              onClick={handlePhoneNumberClick}
-            />
+            <div className="icon-wrapper">
+              <AiOutlineWhatsApp
+                className="icon"
+                onClick={handlePhoneNumberClick}
+              />
+            </div>
 
             <a href="https://discord.com" target="_blank">
-              <BsDiscord className="icon" />
+              <div className="icon-wrapper">
+                <BsDiscord className="icon" />
+              </div>
             </a>
-            <a href="https://twitter.com/dev_abd_" target="_blank">
-              <FiTwitter className="icon" />
+            <a href="https://x.com/its_Sardar_Taha" target="_blank">
+              <div className="icon-wrapper">
+                <FiTwitter className="icon" />
+              </div>
             </a>
 
-            <a
-              href="https://www.linkedin.com/in/abdullah-abbasi-296b1a277/"
-              target="_blank"
-            >
-              <FaLinkedinIn className="icon" />
+            <a href="https://linkedin.com/in/dev-taha" target="_blank">
+              <div className="icon-wrapper">
+                <FaLinkedinIn className="icon" />
+              </div>
             </a>
           </ContacUsIcon>
         </ContacUsIconDiv>

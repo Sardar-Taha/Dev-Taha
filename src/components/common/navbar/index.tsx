@@ -52,7 +52,9 @@ function Topbar() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <Lottie options={defaultOptions} height={120} width={120} />
+            <Link to={"/"}>
+              <Lottie options={defaultOptions} height={120} width={120} />
+            </Link>
           </VideoContainer>
           <IconHolderDiv
             onClick={() => setNavCollapsed(!navCollapsed)}

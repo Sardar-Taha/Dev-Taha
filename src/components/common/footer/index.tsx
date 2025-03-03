@@ -18,7 +18,7 @@ import {
   ServicesText,
   TelephoneWrapper,
 } from "./element";
-import { logo, videoLogo } from "assets";
+import { logo, logoLottie, videoLogo } from "assets";
 import { BsDiscord, BsTelephone } from "react-icons/bs";
 import { GoMail, GoCalendar } from "react-icons/go";
 import { IoLocationOutline } from "react-icons/io5";
@@ -30,6 +30,7 @@ import {
 } from "react-icons/ai";
 import { Link, useLocation } from "react-router-dom";
 import { FaLinkedin, FaLinkedinIn } from "react-icons/fa";
+import Lottie from "react-lottie";
 
 function Footer() {
   const currentDate = new Date();
@@ -44,13 +45,25 @@ function Footer() {
 
   const location = useLocation();
 
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: logoLottie,
+
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   return (
     <FooterWrapper>
       <MainContainer>
         <MainRow>
           <MainCol lg={3}>
             <FooterImageDiv>
-              <img className="img-fluid logo" src={videoLogo} />
+              <Link to={"/"}>
+                <Lottie options={defaultOptions} height={120} width={120} />
+              </Link>
             </FooterImageDiv>
             <FooterText>
               Creating Waves in the Digital Ocean - Ride the Tide of Success.
@@ -60,19 +73,19 @@ function Footer() {
             <FooterContactHeading>Contact Me</FooterContactHeading>
             <TelephoneWrapper>
               <BsTelephone className="margin" />
-              <IconNumber>+92 332 8730 281</IconNumber>
+              <IconNumber>+92 340 5015 414</IconNumber>
             </TelephoneWrapper>
             <EmailWrapper>
               <GoMail className="Mail" />
-              <EmailText>dev.sardarabdul@gmail.com</EmailText>
+              <EmailText>dev.sardartaha@gmail.com</EmailText>
             </EmailWrapper>
             <LocationWrapper>
               <AiOutlineWhatsApp className="Mail" />
-              <LocationText>+92 332 8730 281</LocationText>
+              <LocationText>+92 340 5015 414</LocationText>
             </LocationWrapper>
             <CalenderWrapper>
               <BsDiscord className="Mail" />
-              <CalenderWrapper>Abdullah Abbasi#2665</CalenderWrapper>
+              <CalenderWrapper>Taha Abbasi#9399</CalenderWrapper>
             </CalenderWrapper>
           </MainCol>
           <MainCol lg={3}>
@@ -127,14 +140,11 @@ function Footer() {
             <a href="https://discord.com" target="_blank">
               <BsDiscord className="icon" />
             </a>
-            <a href="https://twitter.com/dev_abd_" target="_blank">
+            <a href="https://x.com/its_Sardar_Taha" target="_blank">
               <FiTwitter className="icon" />
             </a>
 
-            <a
-              href="https://www.linkedin.com/in/abdullah-abbasi-296b1a277/"
-              target="_blank"
-            >
+            <a href="https://linkedin.com/in/dev-taha/" target="_blank">
               <FaLinkedinIn className="icon" />
             </a>
           </FooterIcons>
