@@ -154,7 +154,7 @@ export const NavLink = styled(motion.h4)`
 `;
 
 export const VideoContainer = styled(motion.div)`
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: -2rem;
   margin-left: -2rem;
   @media (max-width: 991.98px) {
