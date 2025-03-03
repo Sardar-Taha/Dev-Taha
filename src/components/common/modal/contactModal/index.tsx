@@ -68,7 +68,7 @@ const ContactModal = ({
 
                   <WorkModalHeading>
                     <a
-                      href="mailto:dev.sardarabdul@gmail.com"
+                      href="mailto:dev.sardartaha@gmail.com"
                       style={{
                         textDecoration: "none",
                         color: "#fff",

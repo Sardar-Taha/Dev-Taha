@@ -106,7 +106,7 @@ function HeroSection() {
                   CREATIVE MIND, CREATIVE WORKS.
                 </HeroCreativeText>
                 <HeroHeading>
-                  Hey, I'm Abdullah - <br /> A &nbsp;
+                  Hey, I'm Taha - <br /> A &nbsp;
                   <span ref={textRef}></span>
                 </HeroHeading>
               </TextDiv>

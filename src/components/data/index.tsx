@@ -184,7 +184,7 @@ export const testimonialsData = [
   },
   {
     id: 2,
-    text: `Abdul delivered a website that perfectly captures our brand. Thank you, Abdul!`,
+    text: `Taha delivered a website that perfectly captures our brand. Thank you, Taha!`,
     author: "male",
     name: "Ahmed Malik",
   },
@@ -208,7 +208,7 @@ export const testimonialsData = [
   },
   {
     id: 6,
-    text: `Abdul's expertise in web development was invaluable in enhancing our online presence. He delivered a stunning website that resonates with our audience.`,
+    text: `Taha's expertise in web development was invaluable in enhancing our online presence. He delivered a stunning website that resonates with our audience.`,
     author: "female",
     name: "Lisa Thompson",
   },
@@ -220,7 +220,7 @@ export const testimonialsData = [
   },
   {
     id: 8,
-    text: `He delivered a website that perfectly represents our brand and captivates our target audience. Thank you, Abdul!`,
+    text: `He delivered a website that perfectly represents our brand and captivates our target audience. Thank you, Taha!`,
     author: "male",
     name: "Muhammad Faisal",
   },
