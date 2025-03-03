@@ -51,7 +51,7 @@ const AboutMe = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 1 }}
             >
-              As a Frontend Web Developer with experience of more than 3 years,
+              As a Frontend Web Developer with experience of more than 2 years,
               I am at the forefront of crafting captivating and user-centric web
               experiences. With a passion for technology and a keen eye for
               design, I specialize in turning ideas and concepts into functional
