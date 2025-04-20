@@ -24,6 +24,7 @@ import { BsLightning } from "react-icons/bs";
 import { heroLottie, map } from "assets";
 import { Image } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const cardsData = [
   {
@@ -132,7 +133,11 @@ function HeroSection() {
                 }}
                 exit={{ transition: { duration: 0.2 } }}
               >
-                <Lottie options={defaultOptions} />
+                <DotLottieReact
+                  src="https://lottie.host/be3c405b-c1fc-46c7-b076-c8241e851dce/9sD2Oz1yFq.lottie"
+                  loop
+                  autoplay
+                />
               </motion.div>
             </MainCol>
           </MainRow>
