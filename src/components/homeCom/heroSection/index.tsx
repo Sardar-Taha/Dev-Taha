@@ -18,11 +18,10 @@ import { Navbar } from "components/common";
 import { useEffect, useRef } from "react";
 import { init } from "ityped";
 import { motion } from "framer-motion";
-import animationData from "../../../assets/lotties/srtars.json";
 import { FaHandshake, FaPencilAlt } from "react-icons/fa";
 import { IoDiamondOutline } from "react-icons/io5";
 import { BsLightning } from "react-icons/bs";
-import { map } from "assets";
+import { heroLottie, map } from "assets";
 import { Image } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
@@ -59,7 +58,7 @@ function HeroSection() {
   const defaultOptions = {
     loop: true,
     autoplay: true,
-    animationData: animationData,
+    animationData: heroLottie,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
       color: "#fff",

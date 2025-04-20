@@ -105,5 +105,6 @@ export { default as dp } from "./images/dp.png";
 export { default as resume } from "./pdf/Taha_Abbasi_Frontend_Dev.pdf";
 export { default as aboutLottie } from "./lotties/about.json";
 export { default as logoLottie } from "./lotties/logo.json";
+export { default as heroLottie } from "./lotties/heroLottie.json";
 export { default as largeFace } from "./images/largeFace.png";
 export { default as smallFace } from "./images/smallFace.png";
