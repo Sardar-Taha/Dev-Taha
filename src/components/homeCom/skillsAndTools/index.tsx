@@ -30,7 +30,8 @@ import { BsGit } from "react-icons/bs";
 import { MdDevices } from "react-icons/md";
 import { vscode } from "assets";
 import { Image } from "react-bootstrap";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const skillsData = [
   {
@@ -97,6 +98,37 @@ const skillsData = [
 ];
 
 function SkillsAndTools() {
+  const [isToggled, setIsToggled] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 991px)");
+
+    const handleResize = (e: MediaQueryListEvent | MediaQueryList) => {
+      if (e.matches) {
+        setIsToggled(true);
+      } else {
+        setIsToggled(false); // Optional: reset if screen gets larger
+      }
+    };
+
+    handleResize(mediaQuery); // Check on mount
+
+    mediaQuery.addEventListener("change", handleResize);
+    return () => mediaQuery.removeEventListener("change", handleResize);
+  }, []);
+
+  const controls = useAnimation();
+
+  const handleDragEnd = () => {
+    setTimeout(() => {
+      controls.start({
+        x: 0,
+        y: 0,
+        transition: { type: "spring", stiffness: 300 },
+      });
+    }, 2500);
+  };
+
   return (
     <SkillsAndToolsContainer id="skills">
       <MainContainer>
@@ -132,8 +164,16 @@ function SkillsAndTools() {
                   className="main-col"
                   initial={{ opacity: 0, x: -100 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 1, delay: index * 0.5 }}
-                  drag
+                  transition={{ duration: 1, delay: index * 0.3 }}
+                  drag={!isToggled}
+                  dragConstraints={{
+                    top: -125,
+                    right: 125,
+                    bottom: 125,
+                    left: -125,
+                  }}
+                  onDragEnd={handleDragEnd}
+                  animate={controls}
                 >
                   <IconHolder>{item.icon}</IconHolder>
                   <IconText>{item.text}</IconText>
