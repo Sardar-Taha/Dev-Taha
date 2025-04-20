@@ -1,12 +1,32 @@
+import { useEffect, useState } from "react";
 import { Page, PageAnimatorWrapper } from "./element";
 
-const data = [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }];
-
 function PageAnimator() {
+  const [isToggled, setIsToggled] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 991px)");
+
+    const handleResize = (e: MediaQueryListEvent | MediaQueryList) => {
+      if (e.matches) {
+        setIsToggled(true);
+      } else {
+        setIsToggled(false);
+      }
+    };
+
+    handleResize(mediaQuery);
+
+    mediaQuery.addEventListener("change", handleResize);
+    return () => mediaQuery.removeEventListener("change", handleResize);
+  }, []);
+
+  const numberofLines = isToggled ? 2 : 5;
+
   return (
     <div>
       <PageAnimatorWrapper key={"nav"}>
-        {data.map((item, index) => (
+        {[...Array(numberofLines)].map((item, index) => (
           <Page
             className={
               (index % 2 === 1 && "odd") ||
