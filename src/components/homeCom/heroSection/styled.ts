@@ -9,6 +9,12 @@ export const MainWrapper = styled.div`
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     margin-top: 4rem;
   }
+
+  .lottie-class {
+    @media (max-width: 576px) {
+      display: none;
+    }
+  }
 `;
 
 export const HeroSectionWrapper = styled(motion.div)`

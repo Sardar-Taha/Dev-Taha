@@ -132,6 +132,7 @@ function HeroSection() {
                   delay: 0.5,
                 }}
                 exit={{ transition: { duration: 0.2 } }}
+                className="lottie-class"
               >
                 <DotLottieReact
                   src="https://lottie.host/be3c405b-c1fc-46c7-b076-c8241e851dce/9sD2Oz1yFq.lottie"
